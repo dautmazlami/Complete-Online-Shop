@@ -1,5 +1,7 @@
 <%- include('../includes/head', { pageTitle: 'Signup' }) %>
 </head>
+<link rel="stylesheet" href="/styles/forms.css">
+<link rel="stylesheet" href="/styles/auth.css">
 <body>
     <%- include('../includes/header') %>
    <main>
@@ -14,7 +16,7 @@
                 <input type="email" id="confirm-email" name="confirm-email" required>
             </p>
             <p>
-                <label for="password" >E-mail</label>
+                <label for="password" >Password</label>
                 <input type="password" id="password" name="password" minlength="6" required>
                </p>
                <hr>
