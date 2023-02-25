@@ -1,5 +1,4 @@
 const mongodb = require('mongodb');
-const { get } = require('../routes/auth.routes');
 
 const MongoClient = mongodb.MongoClient;
 
@@ -12,7 +11,7 @@ async function connectToDatabase(){
 
 function getDb(){
     if (!database) {
-        throw new Error('Connection to Database failed');
+        throw new Error('Connect to Database first!');
     }
 
     return database;
@@ -20,5 +19,5 @@ function getDb(){
 
 module.exports = {
     connectToDatabase: connectToDatabase,  
-    getDb: getDb, 
+    getDb: getDb
 }

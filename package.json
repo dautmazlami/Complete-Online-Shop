@@ -19,8 +19,11 @@
   "homepage": "https://github.com/dautmazlami/Complete-Online-Shop#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "connect-mongodb-session": "^3.1.1",
+    "csurf": "^1.11.0",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
+    "express-session": "^1.17.3",
     "mongodb": "^5.0.1"
   },
   "devDependencies": {
