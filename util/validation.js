@@ -2,7 +2,7 @@ function isEmpty(value) {
   return !value || value.trim() === "";
 }
 
-function userCredentialsAreValid(email, password) {
+function credentialsAreValid(email, password) {
    return  email &&
    email.includes("@") &&
    password &&
@@ -11,7 +11,7 @@ function userCredentialsAreValid(email, password) {
 
 function userCredentialsAreValid(email, password, name, street, postal, city) {
   return (
-    userCredentialsAreValid(email, password) &&
+    credentialsAreValid(email, password) &&
     !isEmpty(name) &&
     !isEmpty(street) &&
     !isEmpty(postal) &&
