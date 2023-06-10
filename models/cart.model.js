@@ -29,6 +29,17 @@ class Cart {
             this.totalPrice += product.price;
          }
     }
+
+    updateProduct(productId, newQuantity){
+        for (let i = 0; i < array.length; i++) {
+            const element = array[i];
+            
+        }
+        
+        if (newQuantity > 0 ) {
+            
+        }
+    }
 }
 
 module.exports = Cart;
